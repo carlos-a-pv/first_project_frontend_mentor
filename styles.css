@@ -12,7 +12,12 @@ html {
     font-size: 62.5%;
     font-family: 'Big Shoulders Display', cursive;
     font-family: 'Lexend Deca', sans-serif;
+    color: rgb(255, 255, 255)
 }
+
+/* main {
+    min-width: 1000px;
+} */
     /* DESGIN OF THE FIRTS SECTION */
     .section_one {
         width: 90%;
@@ -44,6 +49,8 @@ html {
     text-transform: uppercase;
 }
 .section_one__content p {
+    width: 80%;
+    font-size: 1.5rem;
     line-height: 2rem;
     opacity: 0.6;
     margin-bottom: 2rem;
@@ -54,6 +61,7 @@ html {
     border-radius: 20px;
     border: none;
     font-size: 1.2rem;
+    font-weight: bold;
     text-transform: capitalize;
 }
 .section_one__content button:hover {
@@ -77,3 +85,138 @@ html {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
+/* ----------------------------------------------------------------- */
+.section_two{
+    width: 90%;
+    min-width: 290px;
+    max-width: 900px;
+    height: 350px;
+    display: flex;
+    margin: 0 auto;
+    background-color: var(--dark-cyan);
+}
+.section_two__content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    margin: 0 auto; 
+    color: white;
+}
+.section_two__content img {
+    margin-top: 3rem
+}
+.section_two__content h1 {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    text-transform: uppercase;
+}
+.section_two__content p {
+    width: 80%;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    opacity: 0.6;
+    margin-bottom: 2rem;
+}
+.section_two__content button {
+    color: var(--bright-orange);
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--dark-cyan)
+}
+.section_two__content button:hover {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+/* ------------------------------------------------------------------- */
+.section_three{
+    width: 90%;
+    min-width: 290px;
+    max-width: 900px;
+    height: 350px;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 0 8px 8px;
+}
+.section_three__content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto; 
+    color: white;
+}
+.section_three__content img {
+    margin-top: 3rem
+}
+.section_three__content h1 {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    text-transform: uppercase;
+}
+.section_three__content p {
+    width: 80%;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    opacity: 0.6;
+    margin-bottom: 2rem;
+}
+.section_three__content button {
+    color: var(--bright-orange);
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--very-dark-cyan)
+}
+.section_three__content button:hover {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+/* CSS media queries */
+@media (min-width: 600px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        width: 980px;
+        height: 800px;
+        margin: 0 auto;
+        align-items: center;
+    }
+    .section_one, .section_two, .section_three {
+        width:80%;
+        height: 500px;
+        
+        
+    }
+
+    .section_one{
+        border-radius: 8px 0px 0px 8px
+    }
+    .section_two {
+        margin-top: 5rem;
+    }
+    .section_three {
+        margin-top: 10rem;
+        border-radius: 0px 8px 8px 0px
+    }
+  }
